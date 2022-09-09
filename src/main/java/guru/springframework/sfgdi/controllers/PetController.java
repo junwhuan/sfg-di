@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PetController {
 
-    public PetController(@Qualifier("petService") PetService petService) {
+    public PetController(PetService petService) {
         this.petService = petService;
     }
 
